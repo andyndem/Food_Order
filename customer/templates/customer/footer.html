@@ -1,0 +1,9 @@
+<footer class="page-footer font-small bg-dark fixed-bottom">
+  <div class="footer-copyright text-center py-2">
+    Tandem Techniques Ltd &copy; 2022 Copyright. All Rights Reserved 
+    {% if user.is_superuser %}
+    <a class="ml-3" href="{% url 'dashboard' %}">Staff</a>
+    {% endif %}
+  </div>
+</footer>
+{% comment %} <a href="http://localhost:8000">Deliver</a> {% endcomment %}
